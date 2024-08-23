@@ -16,7 +16,7 @@ const MainPage = () => {
     document.querySelector('input[type="file"]').value = '';
   };
 
-  //0-9 corresponding the the respective class in CIFAR-10
+  //0-9 corresponding the the respective classes in CIFAR-10
   const classNames = [
     "Airplane", "Automobile", "Bird", "Cat", "Deer", 
     "Dog", "Frog", "Horse", "Ship", "Truck"
@@ -35,7 +35,7 @@ const MainPage = () => {
 
     try {
       console.log("Sending request to API...");
-      const response = await fetch("http://127.0.0.1:5000/classify-image", {
+      const response = await fetch("http://52.193.217.127:5000/classify-image", { //API URL
         method: "POST",
         body: formData,
       });
@@ -125,12 +125,12 @@ const MainPage = () => {
                 </h3>
                 <ul className="space-y-2">
                   <li>
-                    <a href="#" className="hover:underline">
+                    <a href="https://www.linkedin.com/in/saamer-masood-022333175/" target="_blank" rel="noopener noreferrer" className="hover:underline">
                       LinkedIn
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:underline">
+                    <a href="https://github.com/MasoodSaamer" target="_blank" rel="noopener noreferrer" className="hover:underline">
                       GitHub
                     </a>
                   </li>
