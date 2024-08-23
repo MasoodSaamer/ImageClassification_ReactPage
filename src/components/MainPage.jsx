@@ -35,7 +35,7 @@ const MainPage = () => {
 
     try {
       console.log("Sending request to API...");
-      const response = await fetch("http://52.193.217.127:5000/classify-image", { //API URL
+      const response = await fetch("http://35.78.236.67:5000/classify-image", { //API URL
         method: "POST",
         body: formData,
       });
