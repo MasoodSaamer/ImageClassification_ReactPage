@@ -36,19 +36,19 @@ const MainPage = () => {
       console.log("Response received:", response);
 
       //0-9 corresponding the the respective classes in CIFAR-10
-      const classNames = [
+      /*const classNames = [
         "Airplane", "Automobile", "Bird", "Cat", "Deer", 
         "Dog", "Frog", "Horse", "Ship", "Truck"
-      ];
+      ];*/
 
       if (response.ok) {
         const data = await response.json(); // parses the JSON response to get the result
-        console.log(data)
-        console.log(data.class)
-        const className = classNames[data.class]; // map number to class name
-        console.log(className)
+        //console.log(data)
+        //console.log(data.class)
+        //const className = classNames[data.class]; // map number to class name
+        //console.log(className)
         if (className) {
-          setClassificationResult(`Classified as: ${className}`);
+          setClassificationResult(`Classified as: ${data.class}`);
         } else {
           setClassificationResult("Error: Classification resulted in undefined.");
         }
