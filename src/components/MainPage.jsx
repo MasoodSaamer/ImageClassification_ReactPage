@@ -47,7 +47,11 @@ const MainPage = () => {
         console.log(data.class)
         const className = classNames[data.class]; // map number to class name
         console.log(className)
-        setClassificationResult(`Classified as: ${className}`);
+        if (className) {
+          setClassificationResult(`Classified as: ${className}`);
+        } else {
+          setClassificationResult("Error: Classification resulted in undefined.");
+        }
       } else {
         setClassificationResult("Error in classification. Code: 1");
       }
