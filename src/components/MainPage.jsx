@@ -47,17 +47,11 @@ const MainPage = () => {
         //console.log(data.class)
         //const className = classNames[data.class]; // map number to class name
         //console.log(className)
-        if (className) {
-          setClassificationResult(`Classified as: ${data.class}`);
-        } else {
-          setClassificationResult("Error: Classification resulted in undefined.");
-        }
-      } else {
-        setClassificationResult("Error in classification. Code: 1");
-      }
+        setClassificationResult(`Classified as: ${data.class}`);
+      } 
 
     } catch (error) {
-      setClassificationResult("Error in classification. Code: 2");
+      setClassificationResult("Error in classification.");
     } 
     
   };
