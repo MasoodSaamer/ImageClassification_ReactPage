@@ -15,12 +15,6 @@ const MainPage = () => {
     // Clear the file input field
     document.querySelector('input[type="file"]').value = '';
   };
-
-  //0-9 corresponding the the respective classes in CIFAR-10
-  const classNames = [
-    "Airplane", "Automobile", "Bird", "Cat", "Deer", 
-    "Dog", "Frog", "Horse", "Ship", "Truck"
-  ];
   
 
 
@@ -41,16 +35,25 @@ const MainPage = () => {
       });
       console.log("Response received:", response);
 
+      //0-9 corresponding the the respective classes in CIFAR-10
+      const classNames = [
+        "Airplane", "Automobile", "Bird", "Cat", "Deer", 
+        "Dog", "Frog", "Horse", "Ship", "Truck"
+      ];
+
       if (response.ok) {
         const data = await response.json(); // parses the JSON response to get the result
+        console.log(data)
+        console.log(data.class)
         const className = classNames[data.class]; // map number to class name
+        console.log(className)
         setClassificationResult(`Classified as: ${className}`);
       } else {
-        setClassificationResult("Error in classification.");
+        setClassificationResult("Error in classification. Code: 1");
       }
 
     } catch (error) {
-      setClassificationResult("Error in classification.");
+      setClassificationResult("Error in classification. Code: 2");
     } 
     
   };
