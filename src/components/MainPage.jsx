@@ -7,6 +7,7 @@ const MainPage = () => {
 
   const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
+    setClassificationResult("");
   };
 
   const handleRemoveFile = () => {
