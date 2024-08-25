@@ -72,7 +72,7 @@ const MainPage = () => {
       </h1>
       <p className="mt-10 mb-10 text-lg text-center text-neutral-500 max-w-4xl">
         This program is an image classifying neural network that uses transfer learning. The training model is based on ResNet18 and the datasets and classes
-        are generated from CIFAR-10 within the PyTorch library. 
+        are generated from CIFAR-10 within the PyTorch library. Max image size allowed is 10 MB.
         <br />
         You can email me at masoodofficial27@gmail or connect with me in LinkedIn regarding any feedback or extra information you would like to know about the program.
       </p>
