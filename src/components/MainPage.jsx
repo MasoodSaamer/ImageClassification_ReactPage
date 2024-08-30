@@ -71,8 +71,7 @@ const MainPage = () => {
         <br />
         <br />
         <strong>Note:</strong> This is a relatively simple dataset and as such it would have a hard time classifying complex images 
-        and would probably return the wrong class. I plan to implement CIFAR-100 which would offer 100 classes instead 
-        of 10. In the meanwhile, you can email me at <span className="underline">masoodofficial27@gmail</span> or connect with me on 
+        and would probably return the wrong class. You can email me at <span className="underline">masoodofficial27@gmail</span> or connect with me on 
         {" "}
         <a href="https://www.linkedin.com/in/saamer-masood-022333175/" target="_blank" rel="noopener noreferrer" className="hover:underline text-gray-50">LinkedIn</a> 
         {" "}
