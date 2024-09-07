@@ -65,7 +65,7 @@ const MainPage = () => {
         </span>
       </h1>
       <p className="mt-10 mb-0 text-lg text-center text-neutral-500 max-w-10xl">
-        This program is an image classifying neural network that uses TensorFlow and PyTorch. The training model is based on ResNet18 and the datasets and classes
+        This program is an image classifying neural network that makes use of PyTorch for DeepVision. The training model is based on ResNet18 and the datasets and classes
         are generated from CIFAR-10 within the PyTorch library. The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. 
         <strong> Classes include airplane, automobile, bird, cat, deer, dog, frog, horse, ship, and truck. </strong>
         <br />
